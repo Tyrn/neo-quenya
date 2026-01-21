@@ -21,7 +21,13 @@ _Delle Alqualondeva_
 что он будет постоянно эволюционировать, во всяком случае, до
 тех пор, пока автора на это хватит.
 
-Все обновления публикуются на сайте https://neo-quenya.com.
+Все обновления публикуются на сайте _https://neo-quenya.com. _
+
+#v(2em)
+
+#sym.copyright Delle Alqualondeva, Kingdom Far, Far Away, 2021-2024
+Версия 1.9 от 21 октября 2024 года
+Способ связи: _delle\@neo-quenya.com_
 ]
 
 #let hat_tip() = [
