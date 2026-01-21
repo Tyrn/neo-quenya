@@ -55,6 +55,7 @@ Creative Commons "Attribution-NonCommercial-NoDerivatives"
   subtitle: "Summa Grammatica",
   authors: "Delle Alqualondeva",
   date: 2021,
+  titlepage: none,
   dedication: hat_tip(),
   acknowledgements: authors_note(),
 )
@@ -70,7 +71,20 @@ Creative Commons "Attribution-NonCommercial-NoDerivatives"
   ),
   justify: true,
 )
-== Необходимое предисловие
+
+#let chapter = title => {
+  heading(level: 2, title)
+}
+
+#let section = title => {
+  heading(level: 3, title)
+}
+
+#let subsection = title => {
+  heading(level: 4, title)
+}
+
+#chapter[Необходимое предисловие]
 
 Это не учебник, чтобы по нему учиться,~---~это сборник грамматических правил. Я писал его для себя, потому что невозможно читать и не
 делать записей, и выкладываю в общий доступ, потому что мало ли кому
