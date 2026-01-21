@@ -1,21 +1,14 @@
 #import "@preview/min-book:1.3.0": book
 
 //
-// Global text settings
-//
-#set text(lang: "ru", size: 10pt, hyphenate: true)
-#set par(
-  spacing: 0.65em,
-  first-line-indent: (
-    amount: 1em,
-    all: true,  // Because in Russian indentation is mandatory.
-  ),
-  justify: true,
-)
-//
 // Special characters and combinations
 //
 #let dmd = "⟡"
+
+//
+// Global text settings
+//
+#set text(lang: "ru", size: 10pt, hyphenate: true)
 
 #let authors_note() = [
 _Delle Alqualondeva_
@@ -49,10 +42,14 @@ _Напа_, который делал верстку;
 #dmd
 
 Этот текст доступен в соответствии с лицензией
-Creative Commons «Attribution-NonCommercial-NoDerivatives»
-(«Атрибуция-Некоммерчески-БезПроизводных») 4.0
+Creative Commons "Attribution-NonCommercial-NoDerivatives"
+("Атрибуция-Некоммерчески-БезПроизводных") 4.0
 ]
 
+//
+// The book template activation.
+// All the heavy lifting happens there under the hood.
+//
 #show: book.with(
   title: "Neo-Quenya",
   subtitle: "Summa Grammatica",
@@ -62,3 +59,36 @@ Creative Commons «Attribution-NonCommercial-NoDerivatives»
   acknowledgements: authors_note(),
 )
 
+//
+// Global paragraph settings
+//
+#set par(
+  spacing: 0.65em,
+  first-line-indent: (
+    amount: 1em,
+    all: true,  // Because in Russian indentation is mandatory.
+  ),
+  justify: true,
+)
+== Необходимое предисловие
+
+Это не учебник, чтобы по нему учиться,~---~это сборник грамматических правил. Я писал его для себя, потому что невозможно читать и не
+делать записей, и выкладываю в общий доступ, потому что мало ли кому
+еще понадобится. Я сам учил _quenya_ через английский и хочу сказать, что
+учить его через русский, ввиду наличия в русском куда более близких к
+нему грамматических конструкций, чем в английском, сильно эффективнее.
+
+Прежде чем ввязываться в это дело, имейте в виду, друг-читатель, что
+_quenya_~---~язык, у которого прошлое и будущее изменяются с примерно
+одинаковой скоростью. У него в реальном времени меняется грамматика,
+и изменения имеют обратную силу. Я серьезно: у нас может появиться и
+исчезнуть падеж, глагольное время или еще что-нибудь в этом роде~---~и
+придется, скрипя зубами, переучивать и переосмыслять. К этому невозможно подготовиться, но об этом следует помнить.
+
+Я, к сожалению, не филолог. Поэтому не знаю и совершенно сознательно не использую филологических терминов и концепций там, где можно
+обойтись простыми словами, потому что вы их тоже не знаете, если вы
+не филолог. Если же вы филолог, вам, скорее всего, интереснее будет прочесть грамматические подборки Пола Штрака
+#footnote[https://eldamo.org/content/grammar-indexes/grammars-q.html.],
+для простых смертных
+зубодробительные, но куда более точные и детальные, чем то, что будет
+далее по тексту.
