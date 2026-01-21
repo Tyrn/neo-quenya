@@ -64,6 +64,9 @@ Creative Commons "Attribution-NonCommercial-NoDerivatives"
   titlepage: none,
   dedication: hat_tip(),
   acknowledgements: authors_note(),
+  cfg: (
+    two-sided: false
+  )
 )
 
 //
