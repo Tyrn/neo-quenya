@@ -81,6 +81,10 @@
   justify: true,
 )
 
+//
+// Stub functions, to be conveniently redefined
+// with extended functionality, if necessary
+//
 #let chapter = title => {
   heading(level: 2, title)
 }
@@ -91,6 +95,17 @@
 
 #let subsection = title => {
   heading(level: 4, title)
+}
+
+//
+// Trivial convenience redefinitions
+//
+#let no_indent = paragraph => {
+  par(first-line-indent: 0pt, paragraph)
+}
+
+#let u = txt => {
+  underline(txt)
 }
 
 #chapter[Необходимое предисловие]
@@ -203,7 +218,7 @@ _quenya_ с переводом. В примерах могут попадать�
 возможны всякого рода огрехи. Если вам попалось что-то, прошу вас,
 скажите мне об этом, я приду и поправлю.
 
-#par(first-line-indent: 0pt)[Этот текст был бы намного хуже без соучастия]
+#no_indent[Этот текст был бы намного хуже без соучастия]
 
 - главного редактора _Anna Suriéva-Ennar_;
 - редактора и корректора _Остинг_ (_Евгении Якимовой_);
