@@ -1,4 +1,5 @@
 #import "@preview/min-book:1.3.0": book
+#import "cover.typ": custom-cover
 
 //
 // Special characters and combinations
@@ -25,9 +26,13 @@
 
   #v(2em)
 
-  #sym.copyright Delle Alqualondeva, Kingdom Far, Far Away, 2021-2024
-  Версия 1.9 от 21 октября 2024 года
-  Способ связи: _delle\@neo-quenya.com_
+  #align(right)[
+    #block(width: 80%)[
+      #sym.copyright Delle Alqualondeva, Kingdom Far, Far Away, 2021-2024
+      Версия 1.9 от 21 октября 2024 года
+      Способ связи: _delle\@neo-quenya.com_
+    ]
+  ]
 ]
 
 #let hat_tip() = [
@@ -57,6 +62,7 @@
 // All the heavy lifting happens there under the hood.
 //
 #show: book.with(
+  cover: custom-cover, // Required, so far, to use your own graphics.
   title: "Neo-Quenya",
   subtitle: "Summa Grammatica",
   authors: "Delle Alqualondeva",
@@ -65,7 +71,7 @@
   dedication: hat_tip(),
   acknowledgements: authors_note(),
   cfg: (
-    two-sided: false,
+    two-sided: false, // Changing this could be important for a paper version.
   ),
 )
 
@@ -143,7 +149,7 @@ _quenya_~---~язык, у которого прошлое и будущее из
   предполагалось,~---~я делал доклад на Зиланте 2020, в нем была короткая
   справка об истории языка, которую я сюда тоже приложил в Приложении № 1
   в самом конце, на случай, если кому интересно.].
-Перед вами сборник грамматических правил так называемого Neo-Quenya:
+Перед вами сборник грамматических правил так называемого #box[Neo-Quenya]:
 языка, разрабатываемого по сию пору маньяками-лингвистами, которые
 заслуженно называют себя _quentari_ ("говорящие на _quenya_") и пользуются словами,
 правилами и логикой самых последних черновиков Профессора, чтобы
