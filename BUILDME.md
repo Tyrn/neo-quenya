@@ -9,3 +9,9 @@ _A book made with Typst_
 ```
 typst compile summa/main.typ neo-quenya.pdf
 ```
+
+- Source formatting
+
+```
+typstyle -i summa/*.typ
+```
