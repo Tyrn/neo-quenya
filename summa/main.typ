@@ -76,6 +76,15 @@
   acknowledgements: authors-note(),
   cfg: (
     two-sided: false, // Changing this could be important for a paper version.
+    numbering: (
+      "{1:I}: ",
+      "{2:1}. ",
+      "{2:1}.{3:1}. ",
+      "{2:1}.{3:1}.{4:1}. ",
+      "{2:1}.{3:1}.{4:1}.{5:1}. ",
+      "{2:1}.{3:1}.{4:1}.{5:1}.{6:a}.",
+    ),
+    toc-stdindent: false, // 1.3.0: turn off min-book outline mechanics
   ),
 )
 
