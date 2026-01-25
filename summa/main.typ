@@ -25,9 +25,10 @@
 #let tengwar-transcriber = [https://www.tecendil.com]
 
 //
-// Special characters and combinations
+// Special characters and constants
 //
 #let dmd = "⟡"
+#let squash-it = -0.4em
 
 //
 // Global text settings
@@ -621,11 +622,16 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 Пример стандартной фразы: _noa ré hánonya oante si vanima osto_ (вчера
 мой брат покинул этот прекрасный город).
 
+// Exclude the headings below from the TOC. Don't forget to
+// revert to true after the last heading you want to silence.
+#set heading(outlined: false)
+
 ==== Горсточка существительных
 
 #pad(left: 1em)[
   #table(
     columns: 3,
+    row-gutter: squash-it,
     stroke: none,
     [отец~---~_atar_], [дождь~---~_ulo_], [меч~---~_macil_],
     [мать~---~_amil_], [снег~---~_losse_], [лук~---~_quinga_],
@@ -642,6 +648,7 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 #pad(left: 1em)[
   #table(
     columns: 3,
+    row-gutter: squash-it,
     stroke: none,
     [эльф~---~_elda_], [конь~---~_rocco_], [час~---~_lúme_],
     [человек~---~_atan_], [корабль~---~_cirya_], [день~---~_ré_],
@@ -652,6 +659,7 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 #pad(left: 1em)[
   #table(
     columns: 3,
+    row-gutter: squash-it,
     stroke: none,
     [дом~---~_coa_], [отряд~---~_hotse_], [ужас~---~_norto_],
     [улица~---~_malle_], [воин~---~_mahtar_], [радость~---~_alasse_],
@@ -672,6 +680,7 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 #pad(left: 1em)[
   #table(
     columns: 2,
+    row-gutter: squash-it,
     stroke: none,
     [прекрасный~---~_vanima_], [поспешный~---~_orna_],
     [опасный~---~_raxea_], [острый~---~_maica_],
@@ -695,6 +704,7 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 #pad(left: 1em)[
   #table(
     columns: 2,
+    row-gutter: squash-it,
     stroke: none,
     [делать~---~_car-_], [возвращаться~---~_nanwen-_],
     [видеть~---~_cen-_], [оставлять~---~_hehta-_],
@@ -722,9 +732,12 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
 
 ==== Маленькие полезные словечки
 
+#set heading(outlined: true)
+
 #pad(left: 1em)[
   #table(
     columns: 1,
+    row-gutter: squash-it,
     stroke: none,
     [_pan_~---~потому что],
     [_lan_~---~(до тех пор) пока],
@@ -742,6 +755,8 @@ _serinde_~---~вышивальщица). Я их распишу в соотве�
     [(еще есть в главе про предлоги)],
   )
 ]
+
+== Существительные
 
 #appendices[
   = Краткая история языка в обоих мирах
