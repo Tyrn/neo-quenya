@@ -15,3 +15,10 @@ typst compile summa/main.typ neo-quenya.pdf
 ```
 typstyle -i summa/*.typ
 ```
+
+- Some cases of replacement
+  - Em Dash flanked with spaces to `~---~`
+
+  ```
+  sd -- '\s+—\s+' '~---~' summa/main.typ
+  ```
