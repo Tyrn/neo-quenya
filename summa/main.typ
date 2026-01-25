@@ -1,4 +1,4 @@
-#import "@preview/min-book:1.3.0": book
+#import "@preview/min-book:1.3.0": appendices, book
 #import "cover.typ": custom-cover
 
 //
@@ -11,14 +11,18 @@
 //
 
 #let delle-home = [https://neo-quenya.com]
+#let delle-yt-channel = [https://www.youtube.com/ikadelle]
 #let strack-home = [https://eldamo.org]
 #let strack-papers = [https://eldamo.org/content/grammar-indexes/grammars-q.html]
 #let strack-search-neo = [https://eldamo.org/content/search/search.html?neo]
 #let strack-elvish-fonts = [https://eldamo.org/general/elvish-fonts.html]
+#let strack-intro-quenya = [https://eldamo.org/intro-quenya/index.html]
 #let summa-grammatica-shihali = [https://bit.ly/shihali-neoquenya-grammar-summary]
 #let discord-invite-vl = [https://discord.com/invite/Dhmyzrf]
 #let atanquesta-home = [https://bit.ly/atanquesta]
 #let tengwar-best-home = [https://at.boktypografen.se/tengwar.htm]
+#let parf-eldhellen-dict = [https://www.elfdict.com]
+#let tengwar-transcriber = [https://www.tecendil.com]
 
 //
 // Special characters and combinations
@@ -562,3 +566,41 @@ _quenya_ латиницей, имеет право на всю латиницу,
 
 Неопределенного артикля нет, ура. Используем существительное в
 нужном числе и падеже, и всё.
+
+
+
+#appendices[
+  = Краткая история языка в обоих мирах
+
+  The first ever found barrel dates back to...
+
+  = Полезные интернет-ресурсы
+
+  - Грамматика
+    - Atanquesta, primer Тамаша Ференца: https://bit.ly/atanquesta — это
+      учебник, с текстами и грамматикой, только что без упражнений.
+
+    - Статьи Пола Штрака: https://eldamo.org/content/grammar-indexes/
+      grammars-q.html, где есть детальные объяснения и подробные отсылки к источникам.
+
+    - Свежий (2024) учебник quenya Пола Штрака: https://eldamo.org/
+      intro-quenya/index.html
+
+  - Словари
+    - Eldamo: https://eldamo.org/content/search/search.html?neo, Полом
+      Штраком же составленный отличный словарь.
+
+    - Parf Eldhellen: https://www.elfdict.com — тоже хороший словарь, но
+      Eldamo лучше.
+
+  - Поговорить
+    - Сервер Vinye Lambengolmor на дискорде: https://discord.com/invite/
+      Dhmyzrf.
+
+  - Tengwar
+    - Tengwar Transcriber: https://www.tecendil.com.
+
+
+  - Nandaro londello
+    - Мой канал на Youtube, где лежат мои переводы, и где можно послушать, как звучит речь: https://www.youtube.com/ikadelle
+]
