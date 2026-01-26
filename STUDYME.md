@@ -39,8 +39,9 @@ release, Typst Web App will have to wait.
 
 - [VSCode](https://code.visualstudio.com/). With Typst plugin, this
   is certainly the most user-friendly tool for editing Typst files.
-  [VSCodium](https://vscodium.com/) will do just as well. There are
-  other Typst-friendly editors; they are somewhat less
+  [VSCodium](https://vscodium.com/) will do just as well.
+  Tutorials on Youtube ("typst vscode") range from 1.5 min to 1.5 hours.
+  There are other Typst-friendly editors; they are somewhat less
   newbie-friendly, though. Nevertheless, small changes to a `*.typ`
   file can be done with any plain text editor.
 

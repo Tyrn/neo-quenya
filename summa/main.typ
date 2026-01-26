@@ -33,7 +33,11 @@
 //
 // Global text settings
 //
-#set text(lang: "ru", size: 10pt, hyphenate: true)
+#set text(
+  lang: "ru", // To convert " " to « », etc.
+  size: 10pt,
+  hyphenate: true,
+)
 
 //
 // Prevents a footnote to leak from one page to the next
@@ -152,8 +156,8 @@
 
 // Makes [content] looking like a top level list item
 // without a bullet
-#let felt-pad = (top: .3em, content) => {
-  pad(left: 2em, top: top, bottom: .3em, content)
+#let felt-pad = (left: 2em, top: .3em, bottom: .3em, content) => {
+  pad(left: left, top: top, bottom: bottom, content)
 }
 
 //
