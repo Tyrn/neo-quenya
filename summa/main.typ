@@ -1171,16 +1171,54 @@ quenya нет отдельной формы винительного падеж�
       table.cell(colspan: 2)[*Дв. ч. (оба варианта)*],
     ),
 
-    table.cell(rowspan: 3)[],
-    [], [], [], [], [],
-    [], [], [], [], [],
-    [], [], [], [], [],
-    table.cell(rowspan: 3)[],
-    [], [], [], [], [],
-    [], [], [], [], [],
-    [], [], [], [], [],
+    table.cell(rowspan: 3)[Номинатив\ (кто-что)],
+    [quenta16], [quentar], [quentali], [quentat], [quentu],
+    [málime], [málimi], [máliméli], [málimet], [málimu],
+    [mahtar], [mahtari], [mahtaréli], [mahtarat], [mahtaru],
+    table.cell(rowspan: 3)[Генитив\ (кого-чего)],
+    [quento], [quentaron], [quentalion], [quentato], [quentuo],
+    [málimeo], [málimion], [málimélion], [máliméto], [málimúo],
+    [mahtaro17], [mahtarion], [mahtarélion], [mahtaráto], [mahtarúo],
+    table.cell(rowspan: 3)[Датив\ (кому-чему)],
+    [quentan], [quentain], [quentalin], [quentant], [quentun],
+    [málimen], [málimin], [málimélin], [máliment], [málimun],
+    [mahtaren], [mahtarin], [mahtarélin], [mahtarant], [mahtarun],
+    table.cell(rowspan: 3)[Локатив (где)18],
+    [quentasse], [quentassen], [quentalissen], [quentatse], [quentusse],
+    [málimesse], [málimessen], [málimelissen], [málimetse], [málimusse],
+    [mahtaresse], [mahtaressen], [mahtarelissen], [mahtaratse], [mahtarusse],
+    table.cell(rowspan: 3)[Аллатив (куда)],
+    [quentanna], [quentannar], [quentalinnar], [quentanta], [quentunna],
+    [málimenna], [málimennar], [málimelinnar], [málimenta], [málimunna],
+    [mahtarenna], [mahtarinnar], [mahtarelinnar], [mahtaranta], [mahtarunna],
+    table.cell(rowspan: 3)[Аблатив (откуда)],
+    [quentallo], [quentallon], [quentalillon], [quentalto], [quentullo],
+    [málimello], [málimellon], [málimelillon], [málimelto], [málimullo],
+    [mahtarello], [mahtarellon], [mahtarelillon], [mahtaralto], [mahtarullo],
+    table.cell(rowspan: 3)[Инструментатив\ (при помощи чего)],
+    [quentanen], [quentainen], [quentalínen], [quentanten], [quentunen],
+    [málimenen], [málimínen], [málimelínen], [málimenten], [málimunen],
+    [mahtarénen], [mahtarínen], [mahtarelínen], [mahtaranten], [mahtarúnen],
+    table.cell(rowspan: 3)[Посессив (чей)],
+    [quentava], [quentaiva], [quentalíva], [quentahta], [quentuva],
+    [málimeva], [málimíva], [málimelíva], [málimehta], [málimuva],
+    [mahtarwa19], [mahtaríva], [mahtarelíva], [mahtarehta], [mahtarúva],
   )
 ]
+
+/*
+
+
+
+
+
+
+
+
+17 Вопрос: а если слово уже оканчивается на -о?
+
+
+*/
 
 А вот сейчас будет очень важное правило.
 
