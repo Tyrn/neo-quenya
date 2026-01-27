@@ -57,8 +57,13 @@ work, but one can get a taste of the goings-on, at least.
   Or, at least, is supposed to make.
 - `min-book` [discussions](https://github.com/mayconfmelo/min-book/discussions).
 - [The template menagerie](https://typst.app/universe/search/?kind=templates).
+- [PhD thesis with Typst](https://www.reddit.com/r/typst/comments/1fdvkw6/phd_thesis_with_typst/)
 
 ### Technicalities
 
 - Making the footnotes
   [unbreakable](https://forum.typst.app/t/how-do-i-avoid-splitting-footnote-on-multiple-pages/4055/2)
+- Customizing the
+  [headings](https://github.com/mayconfmelo/min-book/discussions/6)
+- The modular project,
+  [discussion](https://forum.typst.app/t/managing-multifile-book/7764)
