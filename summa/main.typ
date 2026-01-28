@@ -144,6 +144,12 @@
   v(.3em)
 }
 
+// Change this, if uncertain about italics
+// in a great big table :)
+#let i = txt => {
+  emph(txt)
+}
+
 // Underline
 #let u = txt => {
   underline(stroke: .5pt, txt)
@@ -1174,73 +1180,192 @@ quenya нет отдельной формы винительного падеж�
     ),
 
     table.cell(rowspan: 3)[Номинатив\ (кто-что)],
-    [quenta16], [quentar], [quentali], [quentat], [quentu],
-    [málime], [málimi], [máliméli], [málimet], [málimu],
-    [mahtar], [mahtari], [mahtaréli], [mahtarat], [mahtaru],
-    table.cell(rowspan: 3)[Генитив\ (кого-чего)],
-    [quento], [quentaron], [quentalion], [quentato], [quentuo],
-    [málimeo], [málimion], [málimélion], [máliméto], [málimúo],
-    [
-      mahtaro17
-      #footnote[
-        Вопрос: а если слово уже оканчивается на -о?
 
-        Ответ: тогда окончание не изменяется вовсе (ondo) или удлиняется до -ó (có).
+    i[quenta],
+    i[quenta#u[r]],
+    i[quenta#u[li]],
+    i[quenta#u[t]],
+    i[quent#u[u]],
+
+    i[málime],
+    i[málim#u[i]],
+    i[málim#u[éli]],
+    i[málime#u[t]],
+    i[málim#u[u]],
+
+    i[mahtar],
+    i[mahtar#u[i]],
+    i[mahtar#u[éli]],
+    i[mahtar#u[at]],
+    i[mahtar#u[u]],
+
+    table.cell(rowspan: 3)[Генитив\ (кого-чего)],
+
+    i[quent#u[o]],
+    i[quentar#u[on]],
+    i[quenta#u[lion]],
+    i[quenta#u[to]],
+    i[quent#u[uo]],
+
+    i[málime#u[o]],
+    i[málim#u[ion]],
+    i[málim#u[élion]],
+    i[málim#u[éto]],
+    i[málim#u[úo]],
+
+    i[
+      mahtar#u[o]17
+      #footnote[
+        Вопрос: а если слово уже оканчивается на -_о_?
+
+        Ответ: тогда окончание не изменяется вовсе (_ondo_) или удлиняется до -_ó_ (_có_).
 
         Вопрос: в смысле "или"? Как мне выбирать?
 
         Ответ: посмотреть в словаре. Если там не указано,
         спросить на канале в дискорде.
-        Если там не знают, следуй lámatyáve.
+        Если там не знают, следуй _lámatyáve_.
         Этот метод, к сожалению, вообще применяется
         чаще, чем хотелось бы.
       ]
     ],
-    [mahtarion], [mahtarélion], [mahtaráto], [mahtarúo],
+    i[mahtar#u[ion]], i[mahtar#u[élion]], i[mahtará#u[to]], i[mahtar#u[úo]],
+
     table.cell(rowspan: 3)[Датив\ (кому-чему)],
-    [quentan], [quentain], [quentalin], [quentant], [quentun],
-    [málimen], [málimin], [málimélin], [máliment], [málimun],
-    [mahtaren], [mahtarin], [mahtarélin], [mahtarant], [mahtarun],
+
+    i[quenta#u[n]],
+    i[quenta#u[in]],
+    i[quenta#u[lin]],
+    i[quenta#u[nt]],
+    i[quent#u[un]],
+
+    i[málime#u[n]],
+    i[málim#u[in]],
+    i[málim#u[élin]],
+    i[málime#u[nt]],
+    i[málim#u[un]],
+
+    i[mahtar#u[en]],
+    i[mahtar#u[in]],
+    i[mahtar#u[élin]],
+    i[mahtar#u[ant]],
+    i[mahtar#u[un]],
+
     table.cell(rowspan: 3)[
       Локатив (где)18
       #footnote[
         Теоретически локатив существует также в
-        сокращенной форме -s, но поскольку есть
+        сокращенной форме -_s_, но поскольку есть
         много других законных причин оканчивать
-        существительное на s, лучше эту ядерную
+        существительное на _s_, лучше эту ядерную
         кнопку зазря не жать, будет путаница.
       ]
     ],
-    [quentasse], [quentassen], [quentalissen], [quentatse], [quentusse],
-    [málimesse], [málimessen], [málimelissen], [málimetse], [málimusse],
-    [mahtaresse], [mahtaressen], [mahtarelissen], [mahtaratse], [mahtarusse],
+
+    i[quenta#u[sse]],
+    i[quenta#u[ssen]],
+    i[quenta#u[lissen]],
+    i[quenta#u[tse]],
+    i[quent#u[usse]],
+
+    i[málime#u[sse]],
+    i[málime#u[ssen]],
+    i[málime#u[lissen]],
+    i[málime#u[tse]],
+    i[málim#u[usse]],
+
+    i[mahtar#u[esse]],
+    i[mahtar#u[essen]],
+    i[mahtar#u[elissen]],
+    i[mahtar#u[atse]],
+    i[mahtar#u[usse]],
+
     table.cell(rowspan: 3)[Аллатив (куда)],
-    [quentanna], [quentannar], [quentalinnar], [quentanta], [quentunna],
-    [málimenna], [málimennar], [málimelinnar], [málimenta], [málimunna],
-    [mahtarenna], [mahtarinnar], [mahtarelinnar], [mahtaranta], [mahtarunna],
+
+    i[quenta#u[nna]],
+    i[quenta#u[nnar]],
+    i[quenta#u[linnar]],
+    i[quenta#u[nta]],
+    i[quent#u[unna]],
+
+    i[málime#u[nna]],
+    i[málime#u[nnar]],
+    i[málime#u[linnar]],
+    i[málime#u[nta]],
+    i[málim#u[unna]],
+
+    i[mahtar#u[enna]],
+    i[mahtar#u[innar]],
+    i[mahtar#u[elinnar]],
+    i[mahtar#u[anta]],
+    i[mahtar#u[unna]],
+
     table.cell(rowspan: 3)[Аблатив (откуда)],
-    [quentallo], [quentallon], [quentalillon], [quentalto], [quentullo],
-    [málimello], [málimellon], [málimelillon], [málimelto], [málimullo],
-    [mahtarello], [mahtarellon], [mahtarelillon], [mahtaralto], [mahtarullo],
+
+    i[quenta#u[llo]],
+    i[quenta#u[llon]],
+    i[quenta#u[lillon]],
+    i[quenta#u[lto]],
+    i[quent#u[ullo]],
+
+    i[málime#u[llo]],
+    i[málime#u[llon]],
+    i[málime#u[lillon]],
+    i[málime#u[lto]],
+    i[málim#u[ullo]],
+
+    i[mahtar#u[ello]],
+    i[mahtar#u[ellon]],
+    i[mahtar#u[elillon]],
+    i[mahtar#u[alto]],
+    i[mahtar#u[ullo]],
+
     table.cell(rowspan: 3)[Инструментатив\ (при помощи чего)],
-    [quentanen], [quentainen], [quentalínen], [quentanten], [quentunen],
-    [málimenen], [málimínen], [málimelínen], [málimenten], [málimunen],
-    [mahtarénen], [mahtarínen], [mahtarelínen], [mahtaranten], [mahtarúnen],
+
+    i[quenta#u[nen]],
+    i[quenta#u[inen]],
+    i[quenta#u[línen]],
+    i[quenta#u[nten]],
+    i[quent#u[unen]],
+
+    i[málime#u[nen]],
+    i[málim#u[ínen]],
+    i[málime#u[línen]],
+    i[málime#u[nten]],
+    i[málim#u[unen]],
+
+    i[mahtar#u[énen]],
+    i[mahtar#u[ínen]],
+    i[mahtar#u[elínen]],
+    i[mahtar#u[anten]],
+    i[mahtar#u[únen]],
+
     table.cell(rowspan: 3)[Посессив (чей)],
-    [quentava], [quentaiva], [quentalíva], [quentahta], [quentuva],
-    [málimeva], [málimíva], [málimelíva], [málimehta], [málimuva],
-    [
-      mahtarwa19
+
+    i[quenta#u[va]],
+    i[quenta#u[iva]],
+    i[quenta#u[líva]],
+    i[quenta#u[hta]],
+    i[quent#u[uva]],
+
+    i[málime#u[va]],
+    i[málim#u[íva]],
+    i[málime#u[líva]],
+    i[málime#u[hta]],
+    i[málim#u[uva]],
+
+    i[
+      mahtar#u[wa]19
       #footnote[
-        Слова, которые оканчиваются на согласные l/r/n/t
+        Слова, которые оканчиваются на согласные _l/r/n/t_
         получают в поссессиве окончание
-        -wa, а те, которые оканчиваются на все остальные
-        согласные — окончание -va. Вот во множественном
+        -_wa_, а те, которые оканчиваются на все остальные
+        согласные — окончание -_va_. Вот во множественном
         числе, например, где отрастает промежуточное
-        í, окончание становится va.
+        _í_, окончание становится _va_.
       ]
     ],
-    [mahtaríva], [mahtarelíva], [mahtarehta], [mahtarúva],
+    i[mahtar#u[íva]], i[mahtar#u[elíva]], i[mahtar#u[ehta]], i[mahtar#u[úva]],
   )
 ]
 

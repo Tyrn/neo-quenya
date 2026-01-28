@@ -1,0 +1,3 @@
+- [ ] Make all the footnotes beautiful, especially 17.
+- [ ] Make the great big case table prettier.
+- [ ] Prevent the footnotes from breaking into another page, carefully.
