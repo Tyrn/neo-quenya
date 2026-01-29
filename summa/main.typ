@@ -28,6 +28,8 @@
 // Special characters and constants
 //
 #let dmd = "⟡"
+#let p = sym.arrow.r.double
+//#let p = "→"
 #let top-bullet = sym.bullet
 #let squash-it = -0.4em
 
