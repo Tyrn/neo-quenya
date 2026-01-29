@@ -167,8 +167,17 @@
 }
 
 // Full width bullet list project-wide padding
-#let ball-pad = (left: .2em, top: .3em, bottom: .3em, content) => {
-  pad(left: left, top: top, bottom: bottom, content)
+#let ball-pad = (
+  left: .2em,
+  top: .3em,
+  bottom: .3em,
+  marker: (sym.bullet, [--], sym.bullet.tri),
+  content,
+) => {
+  pad(left: left, top: top, bottom: bottom, [
+    #set list(marker: marker)
+    #content
+  ])
 }
 
 //
