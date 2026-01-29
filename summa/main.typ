@@ -28,6 +28,7 @@
 // Special characters and constants
 //
 #let dmd = "⟡"
+#let top-bullet = sym.bullet
 #let squash-it = -0.4em
 
 //
@@ -171,7 +172,7 @@
   left: .2em,
   top: .3em,
   bottom: .3em,
-  marker: (sym.bullet, [--], sym.bullet.tri),
+  marker: (top-bullet, [--], sym.bullet.tri),
   content,
 ) => {
   pad(left: left, top: top, bottom: bottom, [
