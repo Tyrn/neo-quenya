@@ -1729,6 +1729,7 @@ _tyenya harna lá envinyata_ (твой раненый не поправляет�
 угодно:
 
 #pad(left: 0em)[
+  #set list(marker: top-bullet)
   #table(
     columns: 2,
     stroke: none,
@@ -1764,6 +1765,7 @@ _tyenya harna lá envinyata_ (твой раненый не поправляет�
 имеют смысл:
 
 #pad(left: 0em)[
+  #set list(marker: top-bullet)
   #table(
     columns: 2,
     stroke: none,
@@ -1875,6 +1877,7 @@ _Quentari_ дорвались и по той же логике образова�
 
 #block(breakable: false)[
   #pad(left: 0em)[
+    #set list(marker: top-bullet)
     #table(
       columns: 2,
       stroke: none,
