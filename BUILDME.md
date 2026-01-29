@@ -23,9 +23,8 @@ typstyle -i summa/*.typ
   sd -- '\s+—\s+' '~---~' summa/main.typ
   ```
 
-  - Flank → with non-breaking spaces, instead
-    of the regular ones, if there are both of them
+  - Replace → flanked with spaces.
 
   ```
-  sd -- '\s+→\s+' '~→~' summa/main.typ
+  sd -- '\s+→\s+' '~#p~' summa/main.typ
   ```
